@@ -1,0 +1,11 @@
+
+<h1>Lista de anotações</h1>
+
+{{#each posts}}
+    <h2>{{dataValues.titulo}}</h2>
+    <p>{{dataValues.conteudo}}</p>
+    <a href="/delete/{{dataValues.id}}"><button>Deletar</button></a>
+    <hr>
+{{/each}}
+<br>
+<a href="/cad"><button>Nova anotação</button></a>
